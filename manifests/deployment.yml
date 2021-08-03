@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: asitgitmicroservicesaksdevopsk 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asitgitmicroservicesaksdevopsk
+  template:
+    metadata:
+      labels:
+        app: asitgitmicroservicesaksdevopsk 
+    spec:
+      containers:
+        - name: asitgitmicroservicesaksdevopsk 
+          image: myasitshoppingacr.azurecr.io/asitgitmicroservicesaksdevopsk
+          ports:
+          - containerPort: 80
